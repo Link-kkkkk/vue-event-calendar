@@ -1069,7 +1069,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('p', {
       staticClass: "date-num",
       style: ({
-        color: date.title != undefined ? ((date.date == _vm.selectedDay) ? '#fff' : _vm.customColor) : 'inherit'
+        color: date.title != undefined ? ((date.date == _vm.selectedDay) ? '#606266' : _vm.customColor) : 'inherit'
       }),
       on: {
         "click": function($event) {
