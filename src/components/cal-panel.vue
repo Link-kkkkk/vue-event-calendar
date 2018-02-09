@@ -26,11 +26,13 @@
           >
           <p class="date-num"
             @click="handleChangeCurday(date)"
-            :style="{color: date.title != undefined ? ((date.date == selectedDay) ? '#606266' : customColor) : 'inherit'}">
+            :style="{color: date.title != undefined ? ((date.date == selectedDay) ? 'rgb(242, 149, 67)' : customColor) : 'inherit'}">
             {{date.status ? date.date.split('/')[2] : '&nbsp'}}</p>
           <span v-if="date.status ? (today == date.date) : false" class="is-today" :style="{backgroundColor: customColor }" ></span>
+          <!-- <span v-if="date.status ? (date.title != undefined) : false" class="is-event"
+            :style="{borderColor: customColor, backgroundColor: (date.date == selectedDay) ? customColor : 'inherit'}"></span> -->
           <span v-if="date.status ? (date.title != undefined) : false" class="is-event"
-            :style="{borderColor: customColor, backgroundColor: (date.date == selectedDay) ? customColor : 'inherit'}"></span>
+            :style="{borderColor: '#fff', backgroundColor: '#fff'}"></span>
         </div>
       </div>
     </div>

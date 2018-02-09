@@ -533,6 +533,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -1069,7 +1071,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('p', {
       staticClass: "date-num",
       style: ({
-        color: date.title != undefined ? ((date.date == _vm.selectedDay) ? '#606266' : _vm.customColor) : 'inherit'
+        color: date.title != undefined ? ((date.date == _vm.selectedDay) ? 'rgb(242, 149, 67)' : _vm.customColor) : 'inherit'
       }),
       on: {
         "click": function($event) {
@@ -1084,8 +1086,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }) : _vm._e(), _vm._v(" "), (date.status ? (date.title != undefined) : false) ? _c('span', {
       staticClass: "is-event",
       style: ({
-        borderColor: _vm.customColor,
-        backgroundColor: (date.date == _vm.selectedDay) ? _vm.customColor : 'inherit'
+        borderColor: '#fff',
+        backgroundColor: '#fff'
       })
     }) : _vm._e()])
     var _obj;
